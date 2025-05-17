@@ -266,7 +266,10 @@ sudo ufw enable
 ### 💾 Installation
 
 ```bash
+#Installation du server maria db
 sudo apt install mariadb-server
+
+#On sécurise ensuite notre installation à l'aide de la commande
 sudo mariadb-secure-installation
 ```
 
