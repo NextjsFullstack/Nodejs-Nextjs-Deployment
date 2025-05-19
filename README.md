@@ -204,6 +204,15 @@ deploy:
   ./ hgcode@IP_DU_SERVEUR:~/monapp/
   ssh -i ~/.ssh/maclef USER@IP "source ~/.nvm/nvm.sh && cd monapp && npm install && npm run build && npx prisma generate --force && npx prisma db push && pm2 reload monapp"
 ```
+Executer le fichier `Makefile` :
+
+```
+# Pour installer et builder localement
+make build
+
+# Pour déployer via rsync + build + reload distant
+make deploy
+```
 
 ---
 
