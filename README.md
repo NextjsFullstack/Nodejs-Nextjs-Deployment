@@ -207,10 +207,10 @@ deploy:
 Executer le fichier `Makefile` :
 
 ```
-# Pour installer et builder localement
+#Pour installer et builder localement
 make build
 
-# Pour déployer via rsync + build + reload distant
+#Pour déployer via rsync + build + reload distant
 make deploy
 ```
 
