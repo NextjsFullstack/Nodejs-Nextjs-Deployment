@@ -206,7 +206,7 @@ deploy:
 ```
 Executer le fichier `Makefile` :
 
-```
+```bash
 #Pour installer et builder localement
 make build
 
