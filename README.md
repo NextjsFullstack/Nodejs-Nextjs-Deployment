@@ -85,9 +85,9 @@ ssh monuser@IP_DU_SERVEUR
 ```
 
 
-# 🔐 Connexion SSH sans mot de passe à un VPS (herge.me)
+#### 🔐 Connexion SSH sans mot de passe à un VPS (herge.me)
 
-## 1. Générer une clé SSH
+### 1. Générer une clé SSH
 
 ```bash
 ssh-keygen -t ed25519 -C "connexion-herge" -f ~/.ssh/herge_key -N ""
@@ -99,7 +99,7 @@ ssh-keygen -t ed25519 -C "connexion-herge" -f ~/.ssh/herge_key -N ""
 
 ---
 
-## 2. Copier la clé publique sur le VPS
+### 2. Copier la clé publique sur le VPS
 
 ```bash
 ssh-copy-id -i ~/.ssh/herge_key.pub hgcode@herge.me
@@ -113,7 +113,7 @@ cat ~/.ssh/herge_key.pub | ssh hgcode@herge.me 'mkdir -p ~/.ssh && cat >> ~/.ssh
 
 ---
 
-## 3. Créer un alias SSH (optionnel mais pratique)
+### 3. Créer un alias SSH (optionnel mais pratique)
 
 Dans `~/.ssh/config` :
 
@@ -126,7 +126,7 @@ Host herge
 
 ---
 
-## 4. Connexion simple
+### 4. Connexion simple
 
 ```bash
 ssh herge
@@ -134,7 +134,7 @@ ssh herge
 
 ---
 
-## 5. (Optionnel) Désactiver l’authentification par mot de passe sur le VPS
+### 5. (Optionnel) Désactiver l’authentification par mot de passe sur le VPS
 
 Éditer le fichier de configuration SSH :
 
@@ -157,7 +157,7 @@ sudo systemctl restart ssh
 
 ---
 
-## 🧳 Si tu changes de machine locale
+### 🧳 Si tu changes de machine locale
 
 Tu dois copier la clé privée `herge_key` vers la nouvelle machine, puis :
 
